@@ -24,4 +24,14 @@ $routes = [
         ['index', '/api/adress', 'GET'],
         ]
 ];
+$routes = [
+    'Question' => [ // Controller
+        ['question', '/api/question', 'GET'],
+    ]
+];
+$routes = [
+    'Bonbon' => [ // Controller
+        ['allBonbon', '/api/allBonbon', 'GET'],
+    ]
+];
 
