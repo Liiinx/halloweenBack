@@ -21,6 +21,7 @@ class BonbonController extends AbstractController
         $bonbons = $bonbonManager->selectAll();
         //var_dump($adresses);
 
+        header("Access-Control-Allow-Origin: *");
         header('Content-type: application/json');
         return json_encode($bonbons);
         //return $this->twig->render('Item/index.html.twig', ['items' => $items]);

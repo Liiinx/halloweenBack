@@ -19,6 +19,9 @@ class QuestionController extends AbstractController
         $questions = $questionManager->selectAll();
         //var_dump($adresses);
 
+        header("Access-Control-Allow-Origin: *");
+
+
         header('Content-type: application/json');
         return json_encode($questions);
         //return $this->twig->render('Item/index.html.twig', ['items' => $items]);
