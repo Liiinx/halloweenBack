@@ -18,3 +18,12 @@ $routes = [
         ['delete', '/item/delete/{id:\d+}', 'GET'], // action, url, method
     ],
 ];
+
+$routes = [
+    'Adress' => [ // Controller
+        ['index', '']
+        ]
+
+
+]
+
