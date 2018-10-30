@@ -8,7 +8,7 @@
 
 namespace Controller;
 
-//use Model\Adress;
+use Model\Adress;
 use Model\AdressManager;
 
 
@@ -19,7 +19,7 @@ class AdressController extends AbstractController
     {
         $adressManager = new AdressManager($this->getPdo());
         $adresses = $adressManager->selectAll();
-        //var_dump($adresses);
+        var_dump($adresses);
 
         header('Content-type: application/json');
         return json_encode($adresses);

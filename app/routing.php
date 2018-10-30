@@ -21,17 +21,17 @@ $routes = [
   */
 $routes = [
     'Adress' => [ // Controller
-        ['index', '/api/adress', 'GET'],
-        ]
-];
-$routes = [
+          ['index', '/api/adress', 'GET'],
+    ],
+
     'Question' => [ // Controller
         ['question', '/api/question', 'GET'],
-    ]
-];
-$routes = [
+    ],
+
     'Bonbon' => [ // Controller
         ['allBonbon', '/api/allBonbon', 'GET'],
-    ]
+    ],
 ];
+
+
 
