@@ -34,7 +34,7 @@ CREATE TABLE `adresse` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(125) NOT NULL,
   `adresse` varchar(165) NOT NULL,
-  `longitude` float NOT NULL,
+  `image` varchar(255) NOT NULL,
   `latitude` float NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
@@ -46,7 +46,7 @@ CREATE TABLE `adresse` (
 
 LOCK TABLES `adresse` WRITE;
 /*!40000 ALTER TABLE `adresse` DISABLE KEYS */;
-INSERT INTO `adresse` VALUES (1,'prison saint paul saint joseph','17 rue delandine 69002 lyon',0,0),(2,'prison montluc','4 rue jeanne hachette 69003 lyon',0,0),(3,'cimetière de la guillotiere','228 avenue de berthelot 69008 lyon',0,0),(4,'traboule de lyon','vieux lyon ',0,0),(5,'place des terreaux','8 place des terreaux',0,0),(6,'palais de la bourse','place de la bourse 69002 lyon',0,0),(7,'passerelle des 4 vents','Chemin du Viaduc, 69005 Lyon',0,0),(8,'hotel chateau perrache','12 Cours de Verdun Rambaud, 69002 Lyon',0,0);
+INSERT INTO `adresse` VALUES (1,'prison saint paul saint joseph','17 rue delandine 69002 lyon','http://prisons-cherche-midi-mauzac.com/wp-content/uploads/2013/03/suicide_prison_saint_paul_1893.jpg',0),(2,'prison montluc','4 rue jeanne hachette 69003 lyon','https://media.lyon-france.com/1280x960/172271/1896975.jpg',0),(3,'cimetière de la guillotiere','228 avenue de berthelot 69008 lyon','http://peccadille.net/wp-content/uploads/2013/02/cimetic3a8re-capucin-santa-maria-della-concezione-rome.jpg',0),(4,'traboule de lyon','vieux lyon ','http://www.urbex.me/IMG/jpg/6u9a2290.jpg',0),(5,'place des terreaux','8 place des terreaux','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJOP78NUnZeqe1-0_6gRr_lZLrtV7xWYqgX2znXzM2ydIQO8E',0),(6,'palais de la bourse','place de la bourse 69002 lyon','2wCEAAkGBxMTEhUTExMWFhUXGBsaGBgXGBgfGxofHRgXHx0aHhsYHiggHR0lGxoYITEiJSkrLi4uHh8zODMvNygtLisBCgoKDg0OGxAQGy0lICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf',0),(7,'passerelle des 4 vents','Chemin du Viaduc, 69005 Lyon','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlgdwoIy9QdWi29tHfdZtojK6edQsO7birpeo0cwk0eUXFKqtLFQ',0),(8,'hotel chateau perrache','12 Cours de Verdun Rambaud, 69002 Lyon','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnliGIdK2OWEKkbPIJyMsa8CmAKhT5wEAIIcyMPkScCdCgyIKP',0);
 /*!40000 ALTER TABLE `adresse` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -138,4 +138,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-30 23:05:10
+-- Dump completed on 2018-10-31  0:07:22
