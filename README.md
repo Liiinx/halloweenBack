@@ -1,4 +1,4 @@
-# Simple MVC
+# Wild code school Hackathon - halloween 2018
 
 ## Description
 
