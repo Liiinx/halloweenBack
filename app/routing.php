@@ -8,7 +8,7 @@
  *
  * @link     https://github.com/WildCodeSchool/simple-mvc
  */
-
+/*
 $routes = [
     'Item' => [ // Controller
         ['index', '/', 'GET'], // action, url, method
@@ -18,3 +18,18 @@ $routes = [
         ['delete', '/item/delete/{id:\d+}', 'GET'], // action, url, method
     ],
 ];
+  */
+$routes = [
+    'Adress' => [ // Controller
+          ['index', '/api/adress', 'GET'],
+    ],
+
+    'Question' => [ // Controller
+        ['question', '/api/question', 'GET'],
+    ],
+
+    'Bonbon' => [ // Controller
+        ['allBonbon', '/api/allBonbon', 'GET'],
+    ],
+];
+
